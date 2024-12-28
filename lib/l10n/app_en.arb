@@ -1,0 +1,18 @@
+{
+  "applicationTitle": "Contraction timer - Infans",
+  "@applicationTitle": {
+    "description": "application title"
+  },
+  "drawerTimer": "Contraction timer",
+  "@drawerTimer": {
+    "description": "drawer timer"
+  },
+  "drawerHistory": "History",
+  "@drawerHistory": {
+    "description": "drawer history"
+  },
+  "delete": "delete",
+  "@delete": {
+    "description": "delete action"
+  }
+}

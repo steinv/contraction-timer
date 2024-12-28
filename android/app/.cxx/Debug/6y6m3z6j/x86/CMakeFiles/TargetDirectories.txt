@@ -1,0 +1,2 @@
+C:/dev/git/contractions/android/app/.cxx/Debug/6y6m3z6j/x86/CMakeFiles/edit_cache.dir
+C:/dev/git/contractions/android/app/.cxx/Debug/6y6m3z6j/x86/CMakeFiles/rebuild_cache.dir
