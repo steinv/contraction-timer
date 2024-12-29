@@ -109,7 +109,7 @@ class _TimerPageState extends State<TimerPage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             contraction.isOngoing() ? TimerText(contraction: contraction) : Text('$contraction'),
-            Row(
+            contraction.isOngoing() ? Row() : Row(
               children: [
                 IconButton(
                   icon: Icon(Icons.edit),
