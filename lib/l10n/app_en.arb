@@ -3,6 +3,10 @@
   "@applicationTitle": {
     "description": "application title"
   },
+  "guidingText": "Press start on your first contraction",
+  "@guidingText": {
+    "description": "Guiding text for the timer usage"
+  },
   "drawerTimer": "Contraction timer",
   "@drawerTimer": {
     "description": "drawer timer"
