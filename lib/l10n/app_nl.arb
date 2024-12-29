@@ -2,5 +2,12 @@
   "applicationTitle": "Weeën  timer - Infans",
   "drawerTimer": "Weeën  timer",
   "drawerHistory": "Geschiedenis",
-  "delete": "wissen"
+  "actionDelete": "Wissen",
+  "actionContinue": "Doorgaan",
+  "actionCancel": "Annuleren",
+  "deleteContractionDialogTitle": "Verwijderen",
+  "deleteContractionDialogDescription": "Ben je zeker dat je deze wee wilt verwijderen?",
+  "resetDialogTitle": "Gegevens wissen",
+  "resetDialogDescription": "Wis de huidige gegevens. Je kan jouw vorige gegevens terug vinden in de geschiedenis.",
+  "editDialogTitle": "Bewerk gegevens"
 }

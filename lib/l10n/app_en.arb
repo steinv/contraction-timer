@@ -11,8 +11,36 @@
   "@drawerHistory": {
     "description": "drawer history"
   },
-  "delete": "delete",
-  "@delete": {
+  "actionDelete": "Delete",
+  "@actionDelete": {
     "description": "delete action"
+  },
+  "actionContinue": "Continue",
+  "@actionContinue": {
+    "description": "continue action"
+  },
+  "actionCancel": "Cancel",
+  "@actionCancel": {
+    "description": "cancel action"
+  },
+  "deleteContractionDialogTitle": "Delete contraction",
+  "@deleteContractionDialogTitle": {
+    "description": "title for the delete contraction dialog"
+  },
+  "deleteContractionDialogDescription": "Are you sure you want to delete this contraction?",
+  "@deleteContractionDialogDescription": {
+    "description": "description for the delete contraction dialog"
+  },
+  "resetDialogTitle": "Clear contraction data",
+  "@resetDialogTitle": {
+    "description": "title for the reset dialog"
+  },
+  "resetDialogDescription": "Clear the current contraction data. The data will remain available in the history.",
+  "@resetDialogDescription": {
+    "description": "description for the reset dialog"
+  },
+  "editDialogTitle": "Edit contraction data",
+  "@editDialogTitle": {
+    "description": "title for the edit dialog"
   }
 }
