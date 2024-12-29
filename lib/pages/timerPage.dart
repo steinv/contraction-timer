@@ -28,7 +28,7 @@ class _TimerPageState extends State<TimerPage> {
         actions: [
           IconButton(
             icon: Icon(Icons.refresh),
-            onPressed: () {
+            onPressed: _contractions.isEmpty ? null : () {
               String title = AppLocalizations.of(context)!.resetDialogTitle;
               String description = AppLocalizations.of(context)!.resetDialogDescription;
               confirmDialog(context, title, description).then((result) {
@@ -44,19 +44,22 @@ class _TimerPageState extends State<TimerPage> {
         ],
       ),
       body: SafeArea(
-        child: ListView.builder(
-          itemCount: _contractions.length,
-          itemBuilder: (context, index) {
-            int nmbr = _contractions.length - index;
-            return _buildTimelineTile(
-              context: context,
-              indicator: _BulletPoint(text: '$nmbr'),
-              contraction: _contractions.reversed.toList()[index],
-              lineUnder: nmbr != 1,
-              lineAbove: true
-            );
-          },
-        ),
+        child:
+            _contractions.isEmpty
+                ? Center(child: Text(AppLocalizations.of(context)!.guidingText))
+                : ListView.builder(
+                  itemCount: _contractions.length,
+                  itemBuilder: (context, index) {
+                    int nmbr = _contractions.length - index;
+                    return _buildTimelineTile(
+                      context: context,
+                      indicator: _BulletPoint(text: '$nmbr'),
+                      contraction: _contractions.reversed.toList()[index],
+                      lineUnder: nmbr != 1,
+                      lineAbove: true,
+                    );
+                  },
+                ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton:
