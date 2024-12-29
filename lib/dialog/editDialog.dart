@@ -11,7 +11,7 @@ Future<void> editDialog(BuildContext context, Contraction contraction) {
         title: Text(AppLocalizations.of(context)!.editDialogTitle),
         content: Text("blabla"),
         actions: <Widget>[
-          ElevatedButton(
+          FilledButton(
             child: Text(AppLocalizations.of(context)!.actionContinue),
             onPressed: () => Navigator.pop(context),
           ),

@@ -13,7 +13,7 @@ Future<bool?> confirmDialog(BuildContext context, String title, String descripti
             child: Text(AppLocalizations.of(context)!.actionCancel),
             onPressed: () => Navigator.pop(context, false),
           ),
-          ElevatedButton(
+          FilledButton(
             child: Text(AppLocalizations.of(context)!.actionContinue),
             onPressed: () => Navigator.pop(context, true),
           ),
