@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
@@ -8,8 +6,8 @@ import 'package:timeline_tile/timeline_tile.dart';
 import '../components/contraction.dart';
 import '../components/drawer.dart';
 import '../components/timerText.dart';
-import '../dialog/editDialog.dart';
 import '../dialog/confirmDialog.dart';
+import '../dialog/editDialog.dart';
 
 class TimerPage extends StatefulWidget {
   const TimerPage({super.key});
@@ -49,11 +47,13 @@ class _TimerPageState extends State<TimerPage> {
         child: ListView.builder(
           itemCount: _contractions.length,
           itemBuilder: (context, index) {
+            int nmbr = _contractions.length - index;
             return _buildTimelineTile(
               context: context,
-              indicator: _BulletPoint(text: (index + 1).toString()),
-              contraction: _contractions[index],
-              isFirst: index == 0,
+              indicator: _BulletPoint(text: '$nmbr'),
+              contraction: _contractions.reversed.toList()[index],
+              lineUnder: nmbr != 1,
+              lineAbove: true
             );
           },
         ),
@@ -61,21 +61,24 @@ class _TimerPageState extends State<TimerPage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton:
           _contractions.isNotEmpty && _contractions.last.isOngoing()
-              ? FloatingActionButton(
+              ? FloatingActionButton.extended(
                 onPressed: () {
                   setState(() => _contractions.last.endContraction());
                 },
                 tooltip: 'Stop',
-                backgroundColor: Colors.red.shade600,
-                child: const Icon(Icons.stop),
+                icon: const Icon(Icons.stop),
+                label: const Text('Stop'),
+                backgroundColor: Theme.of(context).colorScheme.error,
+                foregroundColor: Theme.of(context).colorScheme.onError,
               )
-              : FloatingActionButton(
+              : FloatingActionButton.extended(
                 onPressed: () {
                   setState(() => _contractions.add(Contraction(DateTime.now())));
                 },
                 tooltip: 'Start',
                 backgroundColor: Colors.green[600],
-                child: const Icon(Icons.start),
+                icon: const Icon(Icons.start),
+                label: const Text('Start'),
               ),
     );
   }
@@ -84,16 +87,18 @@ class _TimerPageState extends State<TimerPage> {
     required BuildContext context,
     required _BulletPoint indicator,
     required Contraction contraction,
-    bool isFirst = false,
-    bool isLast = false,
+    bool lineUnder = false,
+    bool lineAbove = false,
   }) {
     return TimelineTile(
       alignment: TimelineAlign.manual,
       lineXY: 0.3,
+      hasIndicator: true,
+      afterLineStyle: LineStyle(color: Theme.of(context).colorScheme.primary.withAlpha(200)),
       beforeLineStyle: LineStyle(color: Theme.of(context).colorScheme.primary.withAlpha(200)),
-      indicatorStyle: IndicatorStyle(indicatorXY: 0.5, drawGap: true, width: 30, height: 30, indicator: indicator),
-      isLast: isLast,
-      isFirst: isFirst,
+      isFirst: !lineAbove,
+      isLast: !lineUnder,
+      indicatorStyle: IndicatorStyle(indicatorXY: 0.5, drawGap: false, width: 30, height: 30, indicator: indicator),
       startChild: Center(child: Text(DateFormat('HH:mm').format(contraction.start))),
       endChild: Container(
         padding: const EdgeInsets.only(left: 16, right: 16, top: 25, bottom: 25),
@@ -124,7 +129,7 @@ class _TimerPageState extends State<TimerPage> {
                   },
                 ),
               ],
-            )
+            ),
           ],
         ),
       ),
