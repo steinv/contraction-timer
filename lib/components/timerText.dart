@@ -36,6 +36,6 @@ class _TimerTextState extends State<TimerText> {
 
   @override
   Widget build(BuildContext context) {
-    return Text('$contraction');
+    return Text('$contraction', style: TextStyle(fontWeight: FontWeight.bold),);
   }
 }
