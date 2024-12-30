@@ -42,9 +42,5 @@
   "resetDialogDescription": "Clear the current contraction data. The data will remain available in the history.",
   "@resetDialogDescription": {
     "description": "description for the reset dialog"
-  },
-  "editDialogTitle": "Edit contraction data",
-  "@editDialogTitle": {
-    "description": "title for the edit dialog"
   }
 }

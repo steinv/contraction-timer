@@ -1,3 +1,4 @@
+import 'package:contractions/pages/historyPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -11,13 +12,14 @@ Drawer buildDrawer(BuildContext context) {
           leading: const Icon(Icons.timer),
           title: Text(AppLocalizations.of(context)!.drawerTimer),
           selected: true,
-          onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const TimerPage())),
+          onTap: null
         ),
-        ListTile(
-          leading: const Icon(Icons.history),
-          title: Text(AppLocalizations.of(context)!.drawerHistory),
-          onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const TimerPage())),
-        ),
+        // TODO history page
+        // ListTile(
+        //   leading: const Icon(Icons.history),
+        //   title: Text(AppLocalizations.of(context)!.drawerHistory),
+        //   onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Historypage())),
+        // ),
       ],
     ),
   );

@@ -1,3 +1,4 @@
+import 'package:duration_picker/duration_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
@@ -114,7 +115,14 @@ class _TimerPageState extends State<TimerPage> {
                 IconButton(
                   icon: Icon(Icons.edit),
                   onPressed: () {
-                    editDialog(context, contraction);
+                    showDurationPicker(context: context, initialTime: contraction.duration, baseUnit: BaseUnit.second).then(
+                        (result) {
+                          if(result != null) {
+                            setState(() => contraction.end = contraction.start.add(result));
+                            print(contraction);
+                          }
+                        }
+                    );
                   },
                 ),
                 IconButton(

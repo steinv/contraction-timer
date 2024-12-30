@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:contractions/pages/timerPage.dart';
+import 'package:duration_picker/localization/localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -33,7 +34,7 @@ class ContractionsApp extends StatelessWidget {
         ),// Light mode
       ),
       darkTheme: ThemeData(useMaterial3: true, brightness: Brightness.dark, colorSchemeSeed: Colors.pink),
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      localizationsDelegates: [DurationPickerLocalizations.delegate, ...AppLocalizations.localizationsDelegates],
       supportedLocales: AppLocalizations.supportedLocales,
       home: TimerPage(),
     );

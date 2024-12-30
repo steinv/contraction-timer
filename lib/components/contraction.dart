@@ -1,6 +1,6 @@
 class Contraction {
   final DateTime start;
-  late DateTime? end;
+  late DateTime? end = null;
   final Stopwatch _stopwatch;
 
   Contraction(this.start) : _stopwatch = Stopwatch()..start();
@@ -19,7 +19,7 @@ class Contraction {
   }
 
   Duration get duration {
-    return _stopwatch.elapsed;
+    return end?.difference(start) ?? _stopwatch.elapsed;
   }
 
   String getDurationFormatted() {
