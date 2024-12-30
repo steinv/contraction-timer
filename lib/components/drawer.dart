@@ -10,13 +10,10 @@ NavigationDrawer buildDrawer(BuildContext context) {
       NavigationDrawerDestination(icon: const Icon(Icons.timer), label: Text(AppLocalizations.of(context)!.drawerTimer)),
       NavigationDrawerDestination(icon: const Icon(Icons.history), label: Text(AppLocalizations.of(context)!.drawerHistory)),
       const Padding(padding: EdgeInsets.fromLTRB(28, 16, 28, 10), child: Divider()),
-
-      Flexible(
-        child: Center(
-          child: TextButton(
-            onPressed: () => launchUrl(Uri.parse("https://infans.be"), mode: LaunchMode.externalApplication),
-            child: Text("Made by Infans"),
-          ),
+      Center(
+        child: TextButton(
+          onPressed: () => launchUrl(Uri.parse("https://infans.be"), mode: LaunchMode.externalApplication),
+          child: Text("Made by Infans"),
         ),
       ),
     ],

@@ -28,10 +28,16 @@ class _TimerTextState extends State<TimerText> {
   }
 
   void callback(Timer timer) {
+    setState(() {});
     if (!contraction.isOngoing()) {
       timer.cancel();
     }
-    setState(() {});
+  }
+
+  @override
+  void dispose() {
+    timer.cancel();
+    super.dispose();
   }
 
   @override
