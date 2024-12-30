@@ -22,12 +22,12 @@ class Contraction {
     return end?.difference(start) ?? _stopwatch.elapsed;
   }
 
-  String getDurationFormatted() {
+  static String getDurationFormatted(Duration duration) {
     return [duration.inMinutes, duration.inSeconds].map((seg) => seg.remainder(60).toString().padLeft(2, '0')).join(':');
   }
 
   @override
   String toString() {
-    return getDurationFormatted();
+    return getDurationFormatted(duration);
   }
 }

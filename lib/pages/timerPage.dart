@@ -58,9 +58,19 @@ class _TimerPageState extends State<TimerPage> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(flex: 3, child: Center(child: Text(AppLocalizations.of(context)!.headerTime))),
-                        Expanded(flex: 4, child: Center(child: Text(AppLocalizations.of(context)!.headerDuration))),
-                        Expanded(flex: 5, child: Text(AppLocalizations.of(context)!.headerFrequence)),
+                        Expanded(flex: 4, child: Center(child: Text(AppLocalizations.of(context)!.headerTime))),
+                        Expanded(flex: 2, child: Container()),
+                        Expanded(
+                          flex: 10,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(AppLocalizations.of(context)!.headerDuration),
+                              Text(AppLocalizations.of(context)!.headerFrequence),
+                              SizedBox(width: 30), // delete button
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                     Expanded(
@@ -69,10 +79,12 @@ class _TimerPageState extends State<TimerPage> {
                         itemCount: _contractions.length,
                         itemBuilder: (context, index) {
                           int nmbr = _contractions.length - index;
+                          var reversedList = _contractions.reversed.toList();
                           return _buildTimelineTile(
                             context: context,
                             indicator: _BulletPoint(text: '$nmbr'),
-                            contraction: _contractions.reversed.toList()[index],
+                            contraction: reversedList[index],
+                            previousContraction: index + 1 < _contractions.length ? reversedList[index + 1] : null,
                             lineUnder: nmbr != 1,
                             lineAbove: true,
                           );
@@ -111,6 +123,7 @@ class _TimerPageState extends State<TimerPage> {
     required BuildContext context,
     required _BulletPoint indicator,
     required Contraction contraction,
+    Contraction? previousContraction,
     bool lineUnder = false,
     bool lineAbove = false,
   }) {
@@ -140,8 +153,11 @@ class _TimerPageState extends State<TimerPage> {
                       }),
                   child: Row(children: [Text('$contraction'), Icon(Icons.arrow_drop_down)]),
                 ),
+            previousContraction != null
+                ? Text(Contraction.getDurationFormatted(contraction.start.difference(previousContraction.start)))
+                : Text("---"),
             contraction.isOngoing()
-                ? Row()
+                ? SizedBox(width: 30)
                 : Row(
                   children: [
                     IconButton(
