@@ -1,6 +1,9 @@
 {
   "@@locale": "en",
   "applicationTitle": "Contraction timer - Infans",
+  "headerFrequence": "Frequence",
+  "headerTime": "Time",
+  "headerDuration": "Duration",
   "guidingText": "Press start on your first contraction",
   "drawerTimer": "Contraction timer",
   "drawerHistory": "History",

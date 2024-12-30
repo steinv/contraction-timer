@@ -58,9 +58,9 @@ class _TimerPageState extends State<TimerPage> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(flex: 3, child: Center(child: Text("Tijdstip"))),
-                        Expanded(flex: 4, child: Center(child: Text("Duur"))),
-                        Expanded(flex: 5, child: Text("Frequentie")),
+                        Expanded(flex: 3, child: Center(child: Text(AppLocalizations.of(context)!.headerTime))),
+                        Expanded(flex: 4, child: Center(child: Text(AppLocalizations.of(context)!.headerDuration))),
+                        Expanded(flex: 5, child: Text(AppLocalizations.of(context)!.headerFrequence)),
                       ],
                     ),
                     Expanded(

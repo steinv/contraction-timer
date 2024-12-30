@@ -1,6 +1,9 @@
 {
   "@@locale": "nl",
   "applicationTitle": "Weeën  timer - Infans",
+  "headerFrequence": "Frequentie",
+  "headerTime": "Tijdstip",
+  "headerDuration": "Duur",
   "guidingText": "Druk op start wanneer je eerste wee start",
   "drawerTimer": "Weeën  timer",
   "drawerHistory": "Geschiedenis",
