@@ -1,0 +1,14 @@
+{
+  "@@locale": "en",
+  "applicationTitle": "Contraction timer - Infans",
+  "guidingText": "Press start on your first contraction",
+  "drawerTimer": "Contraction timer",
+  "drawerHistory": "History",
+  "actionDelete": "Delete",
+  "actionContinue": "Continue",
+  "actionCancel": "Cancel",
+  "deleteContractionDialogTitle": "Delete contraction",
+  "deleteContractionDialogDescription": "Are you sure you want to delete this contraction?",
+  "resetDialogTitle": "Clear contraction data",
+  "resetDialogDescription": "Clear the current contraction data. The data will remain available in the history."
+}

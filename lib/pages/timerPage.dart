@@ -8,7 +8,6 @@ import '../components/contraction.dart';
 import '../components/drawer.dart';
 import '../components/timerText.dart';
 import '../dialog/confirmDialog.dart';
-import '../dialog/editDialog.dart';
 
 class TimerPage extends StatefulWidget {
   const TimerPage({super.key});
@@ -29,18 +28,21 @@ class _TimerPageState extends State<TimerPage> {
         actions: [
           IconButton(
             icon: Icon(Icons.refresh),
-            onPressed: _contractions.isEmpty ? null : () {
-              String title = AppLocalizations.of(context)!.resetDialogTitle;
-              String description = AppLocalizations.of(context)!.resetDialogDescription;
-              confirmDialog(context, title, description).then((result) {
-                if (result == true) {
-                  setState(() {
-                    // TODO keep history
-                    _contractions.clear();
-                  });
-                }
-              });
-            },
+            onPressed:
+                _contractions.isEmpty
+                    ? null
+                    : () {
+                      String title = AppLocalizations.of(context)!.resetDialogTitle;
+                      String description = AppLocalizations.of(context)!.resetDialogDescription;
+                      confirmDialog(context, title, description).then((result) {
+                        if (result == true) {
+                          setState(() {
+                            // TODO keep history
+                            _contractions.clear();
+                          });
+                        }
+                      });
+                    },
           ),
         ],
       ),
@@ -48,18 +50,36 @@ class _TimerPageState extends State<TimerPage> {
         child:
             _contractions.isEmpty
                 ? Center(child: Text(AppLocalizations.of(context)!.guidingText))
-                : ListView.builder(
-                  itemCount: _contractions.length,
-                  itemBuilder: (context, index) {
-                    int nmbr = _contractions.length - index;
-                    return _buildTimelineTile(
-                      context: context,
-                      indicator: _BulletPoint(text: '$nmbr'),
-                      contraction: _contractions.reversed.toList()[index],
-                      lineUnder: nmbr != 1,
-                      lineAbove: true,
-                    );
-                  },
+                : Column(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Padding(padding: EdgeInsets.only(top: 10)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(flex: 3, child: Center(child: Text("Tijdstip"))),
+                        Expanded(flex: 4, child: Center(child: Text("Duur"))),
+                        Expanded(flex: 5, child: Text("Frequentie")),
+                      ],
+                    ),
+                    Expanded(
+                      child: ListView.builder(
+                        shrinkWrap: true,
+                        itemCount: _contractions.length,
+                        itemBuilder: (context, index) {
+                          int nmbr = _contractions.length - index;
+                          return _buildTimelineTile(
+                            context: context,
+                            indicator: _BulletPoint(text: '$nmbr'),
+                            contraction: _contractions.reversed.toList()[index],
+                            lineUnder: nmbr != 1,
+                            lineAbove: true,
+                          );
+                        },
+                      ),
+                    ),
+                  ],
                 ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
@@ -109,38 +129,37 @@ class _TimerPageState extends State<TimerPage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            contraction.isOngoing() ? TimerText(contraction: contraction) : Text('$contraction'),
-            contraction.isOngoing() ? Row() : Row(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.edit),
-                  onPressed: () {
-                    showDurationPicker(context: context, initialTime: contraction.duration, baseUnit: BaseUnit.second).then(
-                        (result) {
-                          if(result != null) {
-                            setState(() => contraction.end = contraction.start.add(result));
-                            print(contraction);
-                          }
+            contraction.isOngoing()
+                ? TimerText(contraction: contraction)
+                : InkWell(
+                  onTap:
+                      () => showDurationPicker(context: context, initialTime: contraction.duration, baseUnit: BaseUnit.second).then((result) {
+                        if (result != null) {
+                          setState(() => contraction.end = contraction.start.add(result));
                         }
-                    );
-                  },
+                      }),
+                  child: Row(children: [Text('$contraction'), Icon(Icons.arrow_drop_down)]),
                 ),
-                IconButton(
-                  icon: Icon(Icons.delete),
-                  onPressed: () {
-                    String title = AppLocalizations.of(context)!.deleteContractionDialogTitle;
-                    String description = AppLocalizations.of(context)!.deleteContractionDialogDescription;
-                    confirmDialog(context, title, description).then((result) {
-                      if (result == true) {
-                        setState(() {
-                          _contractions.remove(contraction);
+            contraction.isOngoing()
+                ? Row()
+                : Row(
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.delete),
+                      onPressed: () {
+                        String title = AppLocalizations.of(context)!.deleteContractionDialogTitle;
+                        String description = AppLocalizations.of(context)!.deleteContractionDialogDescription;
+                        confirmDialog(context, title, description).then((result) {
+                          if (result == true) {
+                            setState(() {
+                              _contractions.remove(contraction);
+                            });
+                          }
                         });
-                      }
-                    });
-                  },
+                      },
+                    ),
+                  ],
                 ),
-              ],
-            ),
           ],
         ),
       ),
