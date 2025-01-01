@@ -2,6 +2,7 @@ import 'package:duration_picker/duration_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 import '../components/contraction.dart';
@@ -10,6 +11,8 @@ import '../components/timerText.dart';
 import '../dialog/confirmDialog.dart';
 
 class TimerPage extends StatefulWidget {
+  static final String CONTRACTIONS = "contractions_data";
+
   const TimerPage({super.key});
 
   @override
@@ -17,7 +20,22 @@ class TimerPage extends StatefulWidget {
 }
 
 class _TimerPageState extends State<TimerPage> {
-  final List<Contraction> _contractions = List.empty(growable: true);
+  List<Contraction> _contractions = List.empty(growable: true);
+
+  @override
+  void initState() {
+    super.initState();
+    _checkForData();
+  }
+
+  Future<void> _checkForData() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _contractions =
+          prefs.getStringList(TimerPage.CONTRACTIONS)?.map((b64) => Contraction.deserialize(b64)).toList(growable: true) ?? List.empty(growable: true);
+
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +55,6 @@ class _TimerPageState extends State<TimerPage> {
                       confirmDialog(context, title, description).then((result) {
                         if (result == true) {
                           setState(() {
-                            // TODO keep history
                             _contractions.clear();
                           });
                         }
@@ -100,6 +117,9 @@ class _TimerPageState extends State<TimerPage> {
               ? FloatingActionButton.extended(
                 onPressed: () {
                   setState(() => _contractions.last.endContraction());
+                  SharedPreferences.getInstance().then(
+                    (pref) => pref.setStringList(TimerPage.CONTRACTIONS, _contractions.map((c) => c.serialize()).toList(growable: false)),
+                  );
                 },
                 icon: const Icon(Icons.stop),
                 label: Text(AppLocalizations.of(context)!.actionStop),

@@ -18,5 +18,5 @@
   "deleteContractionDialogTitle": "Wehe löschen",
   "deleteContractionDialogDescription": "Sind Sie sicher, dass Sie diese Wehe löschen möchten?",
   "resetDialogTitle": "Wehen-Daten zurücksetzen",
-  "resetDialogDescription": "Löschen Sie die aktuellen Wehen-Daten. Die Daten bleiben im Verlauf verfügbar."
+  "resetDialogDescription": "Löschen Sie die aktuellen Wehen-Daten."
 }

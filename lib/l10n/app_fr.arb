@@ -18,5 +18,5 @@
   "deleteContractionDialogTitle": "Supprimer la contraction",
   "deleteContractionDialogDescription": "Êtes-vous sûr de vouloir supprimer cette contraction ?",
   "resetDialogTitle": "Réinitialiser les données de contraction",
-  "resetDialogDescription": "Effacer les données de contraction actuelles. Les données resteront disponibles dans l'historique."
+  "resetDialogDescription": "Effacer les données de contraction actuelles."
 }

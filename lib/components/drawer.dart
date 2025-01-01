@@ -11,7 +11,7 @@ NavigationDrawer buildDrawer(BuildContext context, int selectedIndex) {
         icon: const Icon(Icons.timer),
         label: Text(AppLocalizations.of(context)!.drawerTimer),
       ),
-      NavigationDrawerDestination(icon: const Icon(Icons.history), label: Text(AppLocalizations.of(context)!.drawerHistory)),
+      // TODO NavigationDrawerDestination(icon: const Icon(Icons.history), label: Text(AppLocalizations.of(context)!.drawerHistory)),
       const Padding(padding: EdgeInsets.fromLTRB(28, 16, 28, 10), child: Divider()),
       Center(
         child: TextButton(

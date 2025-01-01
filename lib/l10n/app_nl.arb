@@ -18,5 +18,5 @@
   "deleteContractionDialogTitle": "Verwijderen",
   "deleteContractionDialogDescription": "Ben je zeker dat je deze wee wilt verwijderen?",
   "resetDialogTitle": "Gegevens wissen",
-  "resetDialogDescription": "Wis de huidige gegevens. Je kan jouw vorige gegevens terug vinden in de geschiedenis."
+  "resetDialogDescription": "Wis de huidige gegevens."
 }
