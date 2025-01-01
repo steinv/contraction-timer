@@ -18,5 +18,7 @@
   "deleteContractionDialogTitle": "Verwijderen",
   "deleteContractionDialogDescription": "Ben je zeker dat je deze wee wilt verwijderen?",
   "resetDialogTitle": "Gegevens wissen",
-  "resetDialogDescription": "Wis de huidige gegevens."
+  "resetDialogDescription": "Wis de huidige gegevens.",
+  "errorContractionInFuture": "Een wee kan niet langer duren dan de huidige tijd.",
+  "errorContractionOverlap": "Een wee kan niet overlappen met de volgende wee."
 }

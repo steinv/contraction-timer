@@ -32,8 +32,8 @@ class _TimerPageState extends State<TimerPage> {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     setState(() {
       _contractions =
-          prefs.getStringList(TimerPage.CONTRACTIONS)?.map((b64) => Contraction.deserialize(b64)).toList(growable: true) ?? List.empty(growable: true);
-
+          prefs.getStringList(TimerPage.CONTRACTIONS)?.map((b64) => Contraction.deserialize(b64)).toList(growable: true) ??
+          List.empty(growable: true);
     });
   }
 
@@ -56,6 +56,7 @@ class _TimerPageState extends State<TimerPage> {
                         if (result == true) {
                           setState(() {
                             _contractions.clear();
+                            SharedPreferences.getInstance().then((pref) => pref.remove(TimerPage.CONTRACTIONS));
                           });
                         }
                       });
@@ -102,6 +103,7 @@ class _TimerPageState extends State<TimerPage> {
                             indicator: _BulletPoint(text: '$nmbr'),
                             contraction: reversedList[index],
                             previousContraction: index + 1 < _contractions.length ? reversedList[index + 1] : null,
+                            nextContraction: index - 1 >= 0 ? reversedList[index - 1] : null,
                             lineUnder: nmbr != 1,
                             lineAbove: true,
                           );
@@ -142,6 +144,7 @@ class _TimerPageState extends State<TimerPage> {
     required _BulletPoint indicator,
     required Contraction contraction,
     Contraction? previousContraction,
+    Contraction? nextContraction,
     bool lineUnder = false,
     bool lineAbove = false,
   }) {
@@ -163,12 +166,32 @@ class _TimerPageState extends State<TimerPage> {
             contraction.isOngoing()
                 ? TimerText(contraction: contraction)
                 : InkWell(
-                  onTap:
-                      () => showDurationPicker(context: context, initialTime: contraction.duration, baseUnit: BaseUnit.second).then((result) {
-                        if (result != null) {
-                          setState(() => contraction.end = contraction.start.add(result));
+                  onTap: () {
+                    Duration maxDuration = nextContraction?.start.difference(contraction.start) ?? DateTime.now().difference(contraction.start);
+                    showDurationPicker(context: context, initialTime: contraction.duration, baseUnit: BaseUnit.second, upperBound: maxDuration).then((
+                      selectedDuration,
+                    ) {
+                      if (selectedDuration != null) {
+                        // prevent editing labour durations into the future or into the next contraction since that would skew the frequence.
+
+                        if (selectedDuration.inSeconds < maxDuration.inSeconds) {
+                          setState(() => contraction.end = contraction.start.add(selectedDuration));
+                        } else {
+                          // setState(() => contraction.end = contraction.start.add(maxDuration));
+                          ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                    nextContraction == null
+                                        ? AppLocalizations.of(context)!.errorContractionInFuture
+                                        : AppLocalizations.of(context)!.errorContractionOverlap
+                                ),
+                              )
+                          );
                         }
-                      }),
+                        ;
+                      }
+                    });
+                  },
                   child: Row(children: [Text('$contraction'), Icon(Icons.arrow_drop_down)]),
                 ),
             previousContraction != null

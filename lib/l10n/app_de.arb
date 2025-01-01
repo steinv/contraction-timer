@@ -18,5 +18,7 @@
   "deleteContractionDialogTitle": "Wehe löschen",
   "deleteContractionDialogDescription": "Sind Sie sicher, dass Sie diese Wehe löschen möchten?",
   "resetDialogTitle": "Wehen-Daten zurücksetzen",
-  "resetDialogDescription": "Löschen Sie die aktuellen Wehen-Daten."
+  "resetDialogDescription": "Löschen Sie die aktuellen Wehen-Daten.",
+  "errorContractionInFuture": "Eine Kontraktion kann nicht über die aktuelle Zeit hinaus verlängert werden.",
+  "errorContractionOverlap": "Die Dauer einer Kontraktion kann nicht in die nächste Kontraktion übergreifen."
 }

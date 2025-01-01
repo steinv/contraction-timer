@@ -18,5 +18,7 @@
   "deleteContractionDialogTitle": "Delete contraction",
   "deleteContractionDialogDescription": "Are you sure you want to delete this contraction?",
   "resetDialogTitle": "Clear contraction data",
-  "resetDialogDescription": "Clear the current contraction data."
+  "resetDialogDescription": "Clear the current contraction data.",
+  "errorContractionInFuture": "A contraction cannot be extended past the current time.",
+  "errorContractionOverlap": "A contraction duration cannot be extend into the next contraction"
 }
