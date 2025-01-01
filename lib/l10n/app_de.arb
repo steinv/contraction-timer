@@ -1,0 +1,20 @@
+{
+  "@@locale": "de",
+  "applicationTitle": "Wehen-Timer - Infans",
+  "disclaimerTitle": "Haftungsausschluss",
+  "disclaimerFull": "Die von dieser App bereitgestellten Informationen dienen nur zu Informationszwecken und sollten nicht als medizinischer Rat ausgelegt werden. Die App ist dazu gedacht, Kontraktionen zu verfolgen, kann jedoch keine medizinischen Zustände diagnostizieren oder vorhersagen. Nur lizenzierte Gesundheitsfachkräfte sind qualifiziert, die Ergebnisse zu interpretieren und medizinische Beratung zu geben.\n\nDurch die Nutzung dieser App erkennen Sie an und stimmen zu, dass die Entwickler und Anbieter nicht für etwaige Folgen der Nutzung oder des Missbrauchs der App haftbar gemacht werden können. Sie sollten immer einen lizenzierten Arzt oder Gesundheitsdienstleister bei Fragen zur Schwangerschaft oder Geburt konsultieren.\n\nDie App ist nicht dazu gedacht, medizinischen Rat, Diagnosen oder Behandlungen zu ersetzen. Die Nutzung erfolgt auf eigenes Risiko.",
+  "disclaimerAgree": "Ich habe den Haftungsausschluss gelesen und akzeptiere ihn",
+  "headerFrequence": "Frequenz",
+  "headerTime": "Zeit",
+  "headerDuration": "Dauer",
+  "guidingText": "Drücken Sie Start bei Ihrer ersten Wehe",
+  "drawerTimer": "Wehen-Timer",
+  "drawerHistory": "Verlauf",
+  "actionDelete": "Löschen",
+  "actionContinue": "Weiter",
+  "actionCancel": "Abbrechen",
+  "deleteContractionDialogTitle": "Wehe löschen",
+  "deleteContractionDialogDescription": "Sind Sie sicher, dass Sie diese Wehe löschen möchten?",
+  "resetDialogTitle": "Wehen-Daten zurücksetzen",
+  "resetDialogDescription": "Löschen Sie die aktuellen Wehen-Daten. Die Daten bleiben im Verlauf verfügbar."
+}

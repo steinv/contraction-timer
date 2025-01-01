@@ -22,7 +22,7 @@ class _TimerPageState extends State<TimerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: buildDrawer(context),
+      drawer: buildDrawer(context, 0),
       appBar: AppBar(
         title: Text(AppLocalizations.of(context)!.applicationTitle),
         actions: [

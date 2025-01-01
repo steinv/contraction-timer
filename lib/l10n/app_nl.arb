@@ -1,5 +1,8 @@
 {
   "@@locale": "nl",
+  "disclaimerTitle": "Disclaimer",
+  "disclaimerFull": "De informatie die door deze app wordt verstrekt, is alleen voor informatieve doeleinden en mag niet worden opgevat als medisch advies. De app is ontworpen om contracties bij te houden, maar kan geen medische aandoeningen diagnosticeren of voorspellen. Alleen erkende zorgprofessionals zijn bevoegd om de resultaten te interpreteren en medisch advies te geven.\n\nDoor deze app te gebruiken, erkent en gaat u ermee akkoord dat de ontwikkelaars en aanbieders niet verantwoordelijk kunnen worden gehouden voor de gevolgen van het gebruik of misbruik van de app. U dient altijd een erkende arts of zorgverlener te raadplegen voor zorgen met betrekking tot zwangerschap of bevalling.\n\nDe app is niet bedoeld als vervanging voor medisch advies, diagnose of behandeling. Gebruik van de app gebeurt op eigen risico.",
+  "disclaimerAgree": "Gelezen en akkoord",
   "applicationTitle": "Weeën  timer - Infans",
   "headerFrequence": "Frequentie",
   "headerTime": "Tijdstip",

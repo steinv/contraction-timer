@@ -1,0 +1,20 @@
+{
+  "@@locale": "fr",
+  "applicationTitle": "Minuteur de contractions - Infans",
+  "disclaimerTitle": "Avertissement",
+  "disclaimerFull": "Les informations fournies par cette application sont à des fins d'information uniquement et ne doivent pas être interprétées comme un avis médical. L'application est conçue pour aider à suivre les contractions, mais elle ne peut pas diagnostiquer ou prédire des conditions médicales. Seuls des professionnels de la santé licenciés sont qualifiés pour interpréter les résultats et fournir des conseils médicaux.\n\nEn utilisant cette application, vous reconnaissez et acceptez que les développeurs et les prestataires ne peuvent être tenus responsables des conséquences découlant de l'utilisation ou de la mauvaise utilisation de l'application. Vous devez toujours consulter un médecin ou un professionnel de la santé pour toute préoccupation liée à la grossesse ou à l'accouchement.\n\nL'application n'a pas pour but de remplacer un avis médical, un diagnostic ou un traitement. Vous l'utilisez à vos risques et périls.",
+  "disclaimerAgree": "J'ai lu et accepté l'avertissement",
+  "headerFrequence": "Fréquence",
+  "headerTime": "Temps",
+  "headerDuration": "Durée",
+  "guidingText": "Appuyez sur démarrer lors de votre première contraction",
+  "drawerTimer": "Minuteur de contractions",
+  "drawerHistory": "Historique",
+  "actionDelete": "Supprimer",
+  "actionContinue": "Continuer",
+  "actionCancel": "Annuler",
+  "deleteContractionDialogTitle": "Supprimer la contraction",
+  "deleteContractionDialogDescription": "Êtes-vous sûr de vouloir supprimer cette contraction ?",
+  "resetDialogTitle": "Réinitialiser les données de contraction",
+  "resetDialogDescription": "Effacer les données de contraction actuelles. Les données resteront disponibles dans l'historique."
+}
