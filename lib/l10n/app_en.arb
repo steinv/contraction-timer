@@ -13,6 +13,8 @@
   "actionDelete": "Delete",
   "actionContinue": "Continue",
   "actionCancel": "Cancel",
+  "actionStart": "Start",
+  "actionStop": "Stop",
   "deleteContractionDialogTitle": "Delete contraction",
   "deleteContractionDialogDescription": "Are you sure you want to delete this contraction?",
   "resetDialogTitle": "Clear contraction data",

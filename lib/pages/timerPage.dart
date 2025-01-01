@@ -101,9 +101,8 @@ class _TimerPageState extends State<TimerPage> {
                 onPressed: () {
                   setState(() => _contractions.last.endContraction());
                 },
-                tooltip: 'Stop',
                 icon: const Icon(Icons.stop),
-                label: const Text('Stop'),
+                label: Text(AppLocalizations.of(context)!.actionStop),
                 backgroundColor: Theme.of(context).colorScheme.error,
                 foregroundColor: Theme.of(context).colorScheme.onError,
               )
@@ -111,10 +110,9 @@ class _TimerPageState extends State<TimerPage> {
                 onPressed: () {
                   setState(() => _contractions.add(Contraction(DateTime.now())));
                 },
-                tooltip: 'Start',
                 backgroundColor: Colors.green[600],
                 icon: const Icon(Icons.start),
-                label: const Text('Start'),
+                label: Text(AppLocalizations.of(context)!.actionStart),
               ),
     );
   }

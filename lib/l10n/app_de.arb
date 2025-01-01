@@ -13,6 +13,8 @@
   "actionDelete": "Löschen",
   "actionContinue": "Weiter",
   "actionCancel": "Abbrechen",
+  "actionStart": "Startten",
+  "actionStop": "Stoppen",
   "deleteContractionDialogTitle": "Wehe löschen",
   "deleteContractionDialogDescription": "Sind Sie sicher, dass Sie diese Wehe löschen möchten?",
   "resetDialogTitle": "Wehen-Daten zurücksetzen",
