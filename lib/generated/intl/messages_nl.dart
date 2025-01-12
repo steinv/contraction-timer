@@ -26,14 +26,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "actionContinue": MessageLookupByLibrary.simpleMessage("Doorgaan"),
         "actionDelete": MessageLookupByLibrary.simpleMessage("Wissen"),
         "applicationTitle":
-            MessageLookupByLibrary.simpleMessage("Weeën  timer - Infans"),
+            MessageLookupByLibrary.simpleMessage("Weeëntimer - Infans"),
         "deleteContractionDialogDescription":
             MessageLookupByLibrary.simpleMessage(
                 "Ben je zeker dat je deze wee wilt verwijderen?"),
         "deleteContractionDialogTitle":
             MessageLookupByLibrary.simpleMessage("Verwijderen"),
         "drawerHistory": MessageLookupByLibrary.simpleMessage("Geschiedenis"),
-        "drawerTimer": MessageLookupByLibrary.simpleMessage("Weeën  timer"),
+        "drawerTimer": MessageLookupByLibrary.simpleMessage("Weeëntimer"),
         "guidingText": MessageLookupByLibrary.simpleMessage(
             "Druk op start wanneer je eerste wee start"),
         "headerDuration": MessageLookupByLibrary.simpleMessage("Duur"),
