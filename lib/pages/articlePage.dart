@@ -22,7 +22,7 @@ class ArticlePage extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 8.0, bottom: 40),
+                  padding: const EdgeInsets.only(left: 16.0, bottom: 40),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start,

@@ -12,5 +12,5 @@ Contractions timer - infans
 [![qrcode android](./assets/qrcode-android.png])](https://play.google.com/store/apps/details?id=be.infans.contractions)
 [![Get it on google playstore](./assets/GetItOnGooglePlay_Badge_Web_color_English.png])](https://play.google.com/store/apps/details?id=be.infans.contractions)
 
-## IOS Apple AppStore
+## iOS Apple AppStore
 
