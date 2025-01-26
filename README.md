@@ -4,13 +4,13 @@ Contractions timer - infans
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- flutter run
+- flutter gen-l10n
 
-A few resources to get you started if this is your first Flutter project:
+## Android Google PlayStore
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+[![qrcode android](./assets/qrcode-android.png])](https://play.google.com/store/apps/details?id=be.infans.contractions)
+[![Get it on google playstore](./assets/GetItOnGooglePlay_Badge_Web_color_English.png])](https://play.google.com/store/apps/details?id=be.infans.contractions)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## IOS Apple AppStore
+

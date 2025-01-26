@@ -45,41 +45,43 @@ class DisclaimerPageState extends State<DisclaimerPage> {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: SafeArea(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(AppLocalizations.of(context)!.disclaimerFull, style: TextStyle(fontSize: 16)),
-              SizedBox(height: 20),
-              CheckboxListTile(
-                controlAffinity: ListTileControlAffinity.leading,
-                title: Text(AppLocalizations.of(context)!.disclaimerAgree),
-                value: _hasReadDisclaimer,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _hasReadDisclaimer = value ?? false;
-                  });
-                },
-              ),
-              SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  FilledButton(
-                    onPressed:
-                        _hasReadDisclaimer
-                            ? () async {
-                              await _saveAgreement(true);
-                              Navigator.pushReplacementNamed(context, '/timer');
-                            }
-                            : null,
-                    child: Text(AppLocalizations.of(context)!.actionContinue),
+                  Text(AppLocalizations.of(context)!.disclaimerFull, style: TextStyle(fontSize: 16)),
+                  SizedBox(height: 20),
+                  CheckboxListTile(
+                    controlAffinity: ListTileControlAffinity.leading,
+                    title: Text(AppLocalizations.of(context)!.disclaimerAgree),
+                    value: _hasReadDisclaimer,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _hasReadDisclaimer = value ?? false;
+                      });
+                    },
+                  ),
+                  SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      FilledButton(
+                        onPressed:
+                            _hasReadDisclaimer
+                                ? () async {
+                                  await _saveAgreement(true);
+                                  Navigator.pushReplacementNamed(context, '/timer');
+                                }
+                                : null,
+                        child: Text(AppLocalizations.of(context)!.actionContinue),
+                      ),
+                    ],
                   ),
                 ],
               ),
-            ],
+            ),
           ),
         ),
-      ),
     );
   }
 }

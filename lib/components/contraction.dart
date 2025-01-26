@@ -10,9 +10,9 @@ class Contraction {
     String jsonString = utf8.decode(base64Decode(b64));
     Map<String, dynamic> json = jsonDecode(jsonString);
 
-    this.start =  DateTime.parse(json['start']);
-    this.end =  DateTime.parse(json['end']);
-    this._stopwatch = Stopwatch();
+    start =  DateTime.parse(json['start']);
+    end =  DateTime.parse(json['end']);
+    _stopwatch = Stopwatch();
   }
 
   bool isOngoing() {
