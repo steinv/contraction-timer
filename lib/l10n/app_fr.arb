@@ -20,5 +20,17 @@
   "resetDialogTitle": "Réinitialiser les données de contraction",
   "resetDialogDescription": "Effacer les données de contraction actuelles.",
   "errorContractionInFuture": "Une contraction ne peut pas être prolongée au-delà de l'heure actuelle.",
-  "errorContractionOverlap": "La durée d'une contraction ne peut pas se prolonger dans la contraction suivante."
+  "errorContractionOverlap": "La durée d'une contraction ne peut pas se prolonger dans la contraction suivante.",
+  "hospitalArticle": "Quand aller à l'hôpital?",
+  "labor": "L'accouchement à l'hôpital et son déroulement",
+  "laborText1": "Parfois, en fonction de vos antécédents médicaux et des examens, l'hôpital peut déjà vous donner une indication sur le moment où vous devez venir. Sinon, nous vous indiquerons le meilleur moment pour vous rendre à l'hôpital.",
+  "laborText2": "La réponse à la question de savoir quand aller à l'hôpital n'est pas toujours la même pour tout le monde.",
+  "laborSubtitle1": "Partir immédiatement dès que...",
+  "laborItem1": "saignement",
+  "laborItem2": "moins de 37 semaines de grossesse",
+  "laborItem3": "liquide amniotique brun ou vert",
+  "laborSubtitle2": "Première grossesse vs. grossesses suivantes",
+  "laborText3": "Lors d'un premier accouchement, votre corps doit se préparer complètement pour la première fois à la naissance, ce qui fait qu'un premier accouchement dure généralement un peu plus longtemps. Ainsi, lors d'un premier accouchement, vous pouvez attendre d'avoir des contractions environ toutes les 5 minutes.",
+  "laborText4": "Si ce n'est pas votre premier accouchement, l'accouchement précédent peut parfois donner une indication sur ce à quoi vous attendre. Si vous avez accouché très rapidement et facilement, il est probable que l'accouchement suivant soit encore plus rapide. En fonction de votre distance de l'hôpital, il peut être conseillé de partir immédiatement à l'hôpital dès les premières contractions.",
+  "childbirth": "accouchement"
 }

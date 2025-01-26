@@ -20,5 +20,17 @@
   "resetDialogTitle": "Clear contraction data",
   "resetDialogDescription": "Clear the current contraction data.",
   "errorContractionInFuture": "A contraction cannot be extended past the current time.",
-  "errorContractionOverlap": "A contraction duration cannot be extend into the next contraction"
+  "errorContractionOverlap": "A contraction duration cannot be extend into the next contraction",
+  "hospitalArticle": "When to go to the hospital?",
+  "labor": "Contractions and the focus on a hospital birth",
+  "laborText1": "Sometimes, based on your medical history and tests, the hospital will already give you a heads-up about when to come in. If not, we'll let you know when the best time is to head to the hospital.",
+  "laborText2": "The answer to the question of when to go to the hospital is not always the same for everyone.",
+  "laborSubtitle1": "Leave immediately as soon as...",
+  "laborItem1": "bleeding",
+  "laborItem2": "less than 37 weeks pregnant",
+  "laborItem3": "brown or green amniotic fluid",
+  "laborSubtitle2": "First pregnancy vs. subsequent pregnancies",
+  "laborText3": "When you're giving birth for the first time, your body has to prepare itself completely for childbirth for the first time, which usually makes a first birth a bit longer. This means that during a first birth, you can wait until you have contractions about every 5 minutes.",
+  "laborText4": "If it's not your first time giving birth, your previous birth can sometimes give an indication of what to expect. Someone who has given birth very quickly and easily before may want to consider that the next birth could be even faster. Depending on how far you live from the hospital, you may be advised to go to the hospital immediately with the first contractions.",
+  "childbirth": "childbirth"
 }

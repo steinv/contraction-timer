@@ -20,5 +20,17 @@
   "resetDialogTitle": "Gegevens wissen",
   "resetDialogDescription": "Wis de huidige gegevens.",
   "errorContractionInFuture": "Een wee kan niet langer duren dan de huidige tijd.",
-  "errorContractionOverlap": "Een wee kan niet overlappen met de volgende wee."
+  "errorContractionOverlap": "Een wee kan niet overlappen met de volgende wee.",
+  "hospitalArticle": "Wanneer naar het ziekenhuis?",
+  "labor": "Weeën en het oog op een ziekenhuisbevalling",
+  "laborText1": "Soms wordt er aan de hand van je voorgeschiedenis en onderzoeken reeds in het ziekenhuis aangegeven wanneer ze graag hebben dat je naar het ziekenhuis komt. Wanneer dit niet gebeurd is, nuanceren we hierbij even wanneer je het best naar het ziekenhuis vertrekt.",
+  "laborText2": "Het antwoord op de vraag wanneer je naar het ziekenhuis moet vertrekken is niet steeds voor iedereen hetzelfde.",
+  "laborSubtitle1": "Ten alle tijden onmiddellijk vertrekken wanneer...",
+  "laborItem1": "bloedverlies",
+  "laborItem2": "< 37 weken zwangerschap",
+  "laborItem3": "bruin of groen vruchtwater",
+  "laborSubtitle2": "Eerste bevalling vs. een volgende bevalling",
+  "laborText3": "Wanneer je voor het eerst gaat bevallen, moet je lichaam zich nog helemaal voor het eerst op alle vlakken klaarmaken voor de geboorte, wat maakt dat een eerste bevalling doorgaans iets langer duurt. Dit maakt dat je bij een eerste bevalling kan wachten tot je om de ca. 5 minuten weeën hebt.",
+  "laborText4": "Wanneer het niet je eerste bevalling is, kan de vorige bevalling soms iets prijs geven in wat je kan verwachten. Iemand die zeer snel en vlot bevallen is, kan er best rekening mee houden dat de volgende bevalling nog sneller verloopt. Rekening houdend met hoever je van het ziekenhuis woont, kan het zijn dat je geadviseerd wordt om onmiddellijk bij de eerste weeën naar het ziekenhuis te vertrekken.",
+  "childbirth": "arbeid en bevalling"
 }

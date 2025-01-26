@@ -20,5 +20,17 @@
   "resetDialogTitle": "Wehen-Daten zurücksetzen",
   "resetDialogDescription": "Löschen Sie die aktuellen Wehen-Daten.",
   "errorContractionInFuture": "Eine Kontraktion kann nicht über die aktuelle Zeit hinaus verlängert werden.",
-  "errorContractionOverlap": "Die Dauer einer Kontraktion kann nicht in die nächste Kontraktion übergreifen."
+  "errorContractionOverlap": "Die Dauer einer Kontraktion kann nicht in die nächste Kontraktion übergreifen.",
+  "hospitalArticle": "Wann sollte man ins Krankenhaus gehen?",
+  "labor": "Die Wehen und der Schwerpunkt auf eine Krankenhausgeburt",
+  "laborText1": "Manchmal wird Ihnen aufgrund Ihrer Krankengeschichte und den Untersuchungen bereits im Krankenhaus mitgeteilt, wann Sie kommen sollten. Falls nicht, sagen wir Ihnen, wann der beste Zeitpunkt ist, um ins Krankenhaus zu kommen.",
+  "laborText2": "Die Antwort auf die Frage, wann Sie ins Krankenhaus kommen sollten, ist nicht immer für jeden gleich.",
+  "laborSubtitle1": "Sofort aufbrechen, sobald...",
+  "laborItem1": "Blutung",
+  "laborItem2": "weniger als 37 Schwangerschaftswochen",
+  "laborItem3": "braune oder grüne Fruchtwasser",
+  "laborSubtitle2": "Erste Schwangerschaft vs. nachfolgende Schwangerschaften",
+  "laborText3": "Bei einer ersten Geburt muss sich dein Körper erst komplett auf die Geburt vorbereiten, was dazu führt, dass eine Erstgeburt in der Regel etwas länger dauert. Daher kannst du bei einer ersten Geburt warten, bis du etwa alle 5 Minuten Wehen hast.",
+  "laborText4": "Wenn es nicht deine erste Geburt ist, kann die vorherige Geburt manchmal einen Hinweis darauf geben, was dich erwartet. Wer sehr schnell und problemlos entbunden hat, kann damit rechnen, dass die nächste Geburt noch schneller verläuft. Abhängig von deiner Entfernung zum Krankenhaus kann es ratsam sein, bei den ersten Wehen sofort ins Krankenhaus zu fahren.",
+  "childbirth": "Geburt"
 }

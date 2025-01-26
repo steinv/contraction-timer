@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../pages/articlePage.dart';
+
 NavigationDrawer buildDrawer(BuildContext context, int selectedIndex) {
   return NavigationDrawer(
     selectedIndex: selectedIndex,
@@ -10,6 +12,10 @@ NavigationDrawer buildDrawer(BuildContext context, int selectedIndex) {
       NavigationDrawerDestination(
         icon: const Icon(Icons.timer),
         label: Text(AppLocalizations.of(context)!.drawerTimer),
+      ),
+      NavigationDrawerDestination(
+        icon: const Icon(Icons.info),
+        label: Text(AppLocalizations.of(context)!.hospitalArticle),
       ),
       // TODO NavigationDrawerDestination(icon: const Icon(Icons.history), label: Text(AppLocalizations.of(context)!.drawerHistory)),
       const Padding(padding: EdgeInsets.fromLTRB(28, 16, 28, 10), child: Divider()),
@@ -25,7 +31,7 @@ NavigationDrawer buildDrawer(BuildContext context, int selectedIndex) {
         if (index == 0) {
           Navigator.pushReplacementNamed(context, '/timer');
         } else if (index == 1) {
-          Navigator.pushReplacementNamed(context, '/history');
+          Navigator.push(context, MaterialPageRoute(builder: (context) => ArticlePage()));
         }
       }
     },

@@ -1,6 +1,7 @@
 import 'package:contractions/pages/disclaimerPage.dart';
 import 'package:contractions/pages/historyPage.dart';
 import 'package:contractions/pages/timerPage.dart';
+import 'package:contractions/pages/articlePage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -43,7 +44,13 @@ class ContractionsApp extends StatelessWidget {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       initialRoute: '/',
-      routes: {'/': (context) => DisclaimerPage(), '/timer': (context) => TimerPage(), '/history': (context) => Historypage()},
+      routes: {
+        '/': (context) => DisclaimerPage(),
+        '/timer': (context) => TimerPage(),
+        '/history': (context) => Historypage(),
+        '/article': (context) => ArticlePage(),
+        '/author': (context) => ArticlePage(), // TODO authorPage
+      },
     );
   }
 }
