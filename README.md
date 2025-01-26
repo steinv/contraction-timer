@@ -6,6 +6,7 @@ Contractions timer - infans
 
 - flutter run
 - flutter gen-l10n
+- flutter build appbundle
 
 ## Android Google PlayStore
 
