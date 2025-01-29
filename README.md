@@ -4,9 +4,9 @@ Contractions timer - infans
 
 ## Getting Started
 
-- flutter run
-- flutter gen-l10n
-- flutter build appbundle
+- `flutter run`
+- `flutter gen-l10n`
+- `flutter build appbundle` or `flutter build ios --release` or `flutter build ipa`
 
 ## Android Google PlayStore
 
