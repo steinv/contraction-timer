@@ -51,6 +51,7 @@ class ContractionsApp extends StatelessWidget {
         '/article': (context) => ArticlePage(),
         '/author': (context) => ArticlePage(), // TODO authorPage
       },
+      debugShowCheckedModeBanner: false,
     );
   }
 }
