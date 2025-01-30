@@ -1,6 +1,7 @@
 {
   "@@locale": "nl",
   "disclaimerTitle": "Disclaimer",
+  "disclaimerShort": "Dit artikel wordt uitsluitend verstrekt voor uw informatie en vervangt niet het advies van een zorgprofessional.",
   "disclaimerFull": "De informatie die door deze app wordt verstrekt, is alleen voor informatieve doeleinden en mag niet worden opgevat als medisch advies. De app is ontworpen om contracties bij te houden, maar kan geen medische aandoeningen diagnosticeren of voorspellen. Alleen erkende zorgprofessionals zijn bevoegd om de resultaten te interpreteren en medisch advies te geven.\n\nDoor deze app te gebruiken, erkent en gaat u ermee akkoord dat de ontwikkelaars en aanbieders niet verantwoordelijk kunnen worden gehouden voor de gevolgen van het gebruik of misbruik van de app. U dient altijd een erkende arts of zorgverlener te raadplegen voor zorgen met betrekking tot zwangerschap of bevalling.\n\nDe app is niet bedoeld als vervanging voor medisch advies, diagnose of behandeling. Gebruik van de app gebeurt op eigen risico.",
   "disclaimerAgree": "Gelezen en akkoord",
   "applicationTitle": "Weeëntimer - Infans",
@@ -32,5 +33,7 @@
   "laborSubtitle2": "Eerste bevalling vs. een volgende bevalling",
   "laborText3": "Wanneer je voor het eerst gaat bevallen, moet je lichaam zich nog helemaal voor het eerst op alle vlakken klaarmaken voor de geboorte, wat maakt dat een eerste bevalling doorgaans iets langer duurt. Dit maakt dat je bij een eerste bevalling kan wachten tot je om de ca. 5 minuten weeën hebt.",
   "laborText4": "Wanneer het niet je eerste bevalling is, kan de vorige bevalling soms iets prijs geven in wat je kan verwachten. Iemand die zeer snel en vlot bevallen is, kan er best rekening mee houden dat de volgende bevalling nog sneller verloopt. Rekening houdend met hoever je van het ziekenhuis woont, kan het zijn dat je geadviseerd wordt om onmiddellijk bij de eerste weeën naar het ziekenhuis te vertrekken.",
-  "childbirth": "arbeid en bevalling"
+  "childbirth": "arbeid en bevalling",
+  "resources": "Bronnen",
+  "and": "en"
 }

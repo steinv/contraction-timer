@@ -2,6 +2,7 @@
   "@@locale": "de",
   "applicationTitle": "Wehen-Timer - Infans",
   "disclaimerTitle": "Haftungsausschluss",
+  "disclaimerShort": "Dieser Artikel dient nur zu Ihrer Information und ersetzt nicht den Rat eines medizinischen Fachpersonals.",
   "disclaimerFull": "Die von dieser App bereitgestellten Informationen dienen nur zu Informationszwecken und sollten nicht als medizinischer Rat ausgelegt werden. Die App ist dazu gedacht, Kontraktionen zu verfolgen, kann jedoch keine medizinischen Zustände diagnostizieren oder vorhersagen. Nur lizenzierte Gesundheitsfachkräfte sind qualifiziert, die Ergebnisse zu interpretieren und medizinische Beratung zu geben.\n\nDurch die Nutzung dieser App erkennen Sie an und stimmen zu, dass die Entwickler und Anbieter nicht für etwaige Folgen der Nutzung oder des Missbrauchs der App haftbar gemacht werden können. Sie sollten immer einen lizenzierten Arzt oder Gesundheitsdienstleister bei Fragen zur Schwangerschaft oder Geburt konsultieren.\n\nDie App ist nicht dazu gedacht, medizinischen Rat, Diagnosen oder Behandlungen zu ersetzen. Die Nutzung erfolgt auf eigenes Risiko.",
   "disclaimerAgree": "Ich habe den Haftungsausschluss gelesen und akzeptiere ihn",
   "headerFrequence": "Frequenz",
@@ -32,5 +33,7 @@
   "laborSubtitle2": "Erste Schwangerschaft vs. nachfolgende Schwangerschaften",
   "laborText3": "Bei einer ersten Geburt muss sich dein Körper erst komplett auf die Geburt vorbereiten, was dazu führt, dass eine Erstgeburt in der Regel etwas länger dauert. Daher kannst du bei einer ersten Geburt warten, bis du etwa alle 5 Minuten Wehen hast.",
   "laborText4": "Wenn es nicht deine erste Geburt ist, kann die vorherige Geburt manchmal einen Hinweis darauf geben, was dich erwartet. Wer sehr schnell und problemlos entbunden hat, kann damit rechnen, dass die nächste Geburt noch schneller verläuft. Abhängig von deiner Entfernung zum Krankenhaus kann es ratsam sein, bei den ersten Wehen sofort ins Krankenhaus zu fahren.",
-  "childbirth": "Geburt"
+  "childbirth": "Geburt",
+  "resources": "Ressourcen",
+  "and": "Und"
 }

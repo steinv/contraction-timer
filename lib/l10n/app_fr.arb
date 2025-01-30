@@ -2,6 +2,7 @@
   "@@locale": "fr",
   "applicationTitle": "Minuteur de contractions - Infans",
   "disclaimerTitle": "Avertissement",
+  "disclaimerShort": "Cet article est fourni à titre informatif uniquement et ne remplace pas les conseils d'un professionnel de santé.",
   "disclaimerFull": "Les informations fournies par cette application sont à des fins d'information uniquement et ne doivent pas être interprétées comme un avis médical. L'application est conçue pour aider à suivre les contractions, mais elle ne peut pas diagnostiquer ou prédire des conditions médicales. Seuls des professionnels de la santé licenciés sont qualifiés pour interpréter les résultats et fournir des conseils médicaux.\n\nEn utilisant cette application, vous reconnaissez et acceptez que les développeurs et les prestataires ne peuvent être tenus responsables des conséquences découlant de l'utilisation ou de la mauvaise utilisation de l'application. Vous devez toujours consulter un médecin ou un professionnel de la santé pour toute préoccupation liée à la grossesse ou à l'accouchement.\n\nL'application n'a pas pour but de remplacer un avis médical, un diagnostic ou un traitement. Vous l'utilisez à vos risques et périls.",
   "disclaimerAgree": "J'ai lu et accepté l'avertissement",
   "headerFrequence": "Fréquence",
@@ -32,5 +33,7 @@
   "laborSubtitle2": "Première grossesse vs. grossesses suivantes",
   "laborText3": "Lors d'un premier accouchement, votre corps doit se préparer complètement pour la première fois à la naissance, ce qui fait qu'un premier accouchement dure généralement un peu plus longtemps. Ainsi, lors d'un premier accouchement, vous pouvez attendre d'avoir des contractions environ toutes les 5 minutes.",
   "laborText4": "Si ce n'est pas votre premier accouchement, l'accouchement précédent peut parfois donner une indication sur ce à quoi vous attendre. Si vous avez accouché très rapidement et facilement, il est probable que l'accouchement suivant soit encore plus rapide. En fonction de votre distance de l'hôpital, il peut être conseillé de partir immédiatement à l'hôpital dès les premières contractions.",
-  "childbirth": "accouchement"
+  "childbirth": "accouchement",
+  "resources": "Ressources",
+  "and": "et"
 }

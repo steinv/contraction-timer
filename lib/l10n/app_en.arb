@@ -2,6 +2,7 @@
   "@@locale": "en",
   "applicationTitle": "Contraction timer - Infans",
   "disclaimerTitle": "Disclaimer",
+  "disclaimerShort": "This article is provided for your information only and does not replace the advice of a healthcare professional.",
   "disclaimerFull": "The information provided by this app is for informational purposes only and should not be construed as medical advice. The app is designed to help track contractions, but it cannot diagnose or predict medical conditions. Only licensed healthcare professionals are qualified to interpret the results and provide medical guidance.\n\n  By using this app, you acknowledge and agree that the developers and providers are not responsible for any consequences arising from the use or misuse of the app. You should always consult with a licensed physician or healthcare provider for any concerns related to pregnancy or labor.\n\n  The app is not intended to replace medical advice, diagnosis, or treatment. Use it at your own risk.",
   "disclaimerAgree": "I have read and agree to the disclaimer",
   "headerFrequence": "Frequence",
@@ -32,5 +33,7 @@
   "laborSubtitle2": "First pregnancy vs. subsequent pregnancies",
   "laborText3": "When you're giving birth for the first time, your body has to prepare itself completely for childbirth for the first time, which usually makes a first birth a bit longer. This means that during a first birth, you can wait until you have contractions about every 5 minutes.",
   "laborText4": "If it's not your first time giving birth, your previous birth can sometimes give an indication of what to expect. Someone who has given birth very quickly and easily before may want to consider that the next birth could be even faster. Depending on how far you live from the hospital, you may be advised to go to the hospital immediately with the first contractions.",
-  "childbirth": "childbirth"
+  "childbirth": "childbirth",
+  "resources": "Article resources",
+  "and": "and"
 }
