@@ -81,7 +81,10 @@ class ArticlePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     InkWell(
-                      onTap: () {},
+                      onTap: () => launchUrl(
+                        Uri.parse("https://www.desocialekaart.be/fiches/e87d4b31ec7faddb3e2a9bc50d61a788d1faade617be343b841326422a598b0c"),
+                        mode: LaunchMode.externalApplication,
+                      ),
                       //=> Navigator.push(context, MaterialPageRoute(builder: (context) => AuthorPage())), // TODO authorPage
                       child: Row(
                         children: [
