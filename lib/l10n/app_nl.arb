@@ -35,5 +35,43 @@
   "laborText4": "Wanneer het niet je eerste bevalling is, kan de vorige bevalling soms iets prijs geven in wat je kan verwachten. Iemand die zeer snel en vlot bevallen is, kan er best rekening mee houden dat de volgende bevalling nog sneller verloopt. Rekening houdend met hoever je van het ziekenhuis woont, kan het zijn dat je geadviseerd wordt om onmiddellijk bij de eerste weeën naar het ziekenhuis te vertrekken.",
   "childbirth": "arbeid en bevalling",
   "resources": "Bronnen",
-  "and": "en"
+  "and": "en",
+  "days": "{count, plural, =1{1 dag} other{{count} dagen}}",
+  "@days": {
+    "description": "A plural message",
+    "placeholders": {
+      "count": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
+  "durationHours": "{hours}u {minutes}min",
+  "@durationHours": {
+    "description": "a duration formatter in hours and minutes",
+    "placeholders": {
+      "hours": {
+        "type": "String",
+        "example": "01"
+      },
+      "minutes": {
+         "type": "String",
+         "example": "11"
+        }
+    }
+  },
+    "durationMin": "{minutes}min {seconds}sec",
+    "@durationMin": {
+      "description": "a duration formatter in minutes and seconds",
+      "placeholders": {
+        "minutes": {
+          "type": "String",
+          "example": "01"
+        },
+        "seconds": {
+           "type": "String",
+           "example": "11"
+          }
+      }
+    }
 }

@@ -35,5 +35,43 @@
   "laborText4": "Wenn es nicht deine erste Geburt ist, kann die vorherige Geburt manchmal einen Hinweis darauf geben, was dich erwartet. Wer sehr schnell und problemlos entbunden hat, kann damit rechnen, dass die nächste Geburt noch schneller verläuft. Abhängig von deiner Entfernung zum Krankenhaus kann es ratsam sein, bei den ersten Wehen sofort ins Krankenhaus zu fahren.",
   "childbirth": "Geburt",
   "resources": "Ressourcen",
-  "and": "Und"
+  "and": "Und",
+    "days": "{count, plural, =1{1 Tag} other{{count} Tagen}}",
+    "@days": {
+      "description": "A plural message",
+      "placeholders": {
+        "count": {
+          "type": "num",
+          "format": "compact"
+        }
+      }
+    },
+    "durationHours": "{hours}u {minutes}min",
+    "@durationHours": {
+      "description": "a duration formatter in hours and minutes",
+      "placeholders": {
+        "hours": {
+          "type": "String",
+          "example": "01"
+        },
+        "minutes": {
+           "type": "String",
+           "example": "11"
+          }
+      }
+    },
+      "durationMin": "{minutes}min {seconds}sec",
+      "@durationMin": {
+        "description": "a duration formatter in minutes and seconds",
+        "placeholders": {
+          "minutes": {
+            "type": "String",
+            "example": "01"
+          },
+          "seconds": {
+             "type": "String",
+             "example": "11"
+            }
+        }
+      }
 }

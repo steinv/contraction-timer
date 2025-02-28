@@ -35,5 +35,43 @@
   "laborText4": "Si ce n'est pas votre premier accouchement, l'accouchement précédent peut parfois donner une indication sur ce à quoi vous attendre. Si vous avez accouché très rapidement et facilement, il est probable que l'accouchement suivant soit encore plus rapide. En fonction de votre distance de l'hôpital, il peut être conseillé de partir immédiatement à l'hôpital dès les premières contractions.",
   "childbirth": "accouchement",
   "resources": "Ressources",
-  "and": "et"
+  "and": "et",
+    "days": "{count, plural, =1{1 jour} other{{count} jours}}",
+    "@days": {
+      "description": "A plural message",
+      "placeholders": {
+        "count": {
+          "type": "num",
+          "format": "compact"
+        }
+      }
+    },
+    "durationHours": "{hours}h {minutes}min",
+    "@durationHours": {
+      "description": "a duration formatter in hours and minutes",
+      "placeholders": {
+        "hours": {
+          "type": "String",
+          "example": "01"
+        },
+        "minutes": {
+           "type": "String",
+           "example": "11"
+          }
+      }
+    },
+      "durationMin": "{minutes}min {seconds}sec",
+      "@durationMin": {
+        "description": "a duration formatter in minutes and seconds",
+        "placeholders": {
+          "minutes": {
+            "type": "String",
+            "example": "01"
+          },
+          "seconds": {
+             "type": "String",
+             "example": "11"
+            }
+        }
+      }
 }

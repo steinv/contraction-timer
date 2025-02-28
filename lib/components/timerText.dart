@@ -1,8 +1,8 @@
-
 import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'contraction.dart';
 
 class TimerText extends StatefulWidget {
@@ -42,6 +42,12 @@ class _TimerTextState extends State<TimerText> {
 
   @override
   Widget build(BuildContext context) {
-    return Text('$contraction', style: TextStyle(fontWeight: FontWeight.bold),);
+    return Text(
+      Contraction.getDurationFormatted(
+        contraction.duration,
+        AppLocalizations.of(context)!,
+      ),
+      style: TextStyle(fontWeight: FontWeight.bold),
+    );
   }
 }

@@ -150,7 +150,7 @@ class _TimerPageState extends State<TimerPage> {
   }) {
     return TimelineTile(
       alignment: TimelineAlign.manual,
-      lineXY: 0.3,
+      lineXY: 0.25,
       hasIndicator: true,
       afterLineStyle: LineStyle(color: Theme.of(context).colorScheme.primary.withAlpha(200)),
       beforeLineStyle: LineStyle(color: Theme.of(context).colorScheme.primary.withAlpha(200)),
@@ -192,10 +192,10 @@ class _TimerPageState extends State<TimerPage> {
                       }
                     });
                   },
-                  child: Row(children: [Text('$contraction'), Icon(Icons.arrow_drop_down)]),
+                  child: Row(children: [Text(Contraction.getDurationFormatted(contraction.duration, AppLocalizations.of(context)!)), Icon(Icons.arrow_drop_down)]),
                 ),
             previousContraction != null
-                ? Text(Contraction.getDurationFormatted(contraction.start.difference(previousContraction.start)))
+                ? Text(Contraction.getDurationFormatted(contraction.start.difference(previousContraction.start), AppLocalizations.of(context)!))
                 : Text("---"),
             contraction.isOngoing()
                 ? SizedBox(width: 30)

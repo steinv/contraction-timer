@@ -35,5 +35,43 @@
   "laborText4": "If it's not your first time giving birth, your previous birth can sometimes give an indication of what to expect. Someone who has given birth very quickly and easily before may want to consider that the next birth could be even faster. Depending on how far you live from the hospital, you may be advised to go to the hospital immediately with the first contractions.",
   "childbirth": "childbirth",
   "resources": "Article resources",
-  "and": "and"
+  "and": "and",
+    "days": "{count, plural, =1{1 day} other{{count} days}}",
+    "@days": {
+      "description": "A plural message",
+      "placeholders": {
+        "count": {
+          "type": "num",
+          "format": "compact"
+        }
+      }
+    },
+    "durationHours": "{hours}h {minutes}min",
+    "@durationHours": {
+      "description": "a duration formatter in hours and minutes",
+      "placeholders": {
+        "hours": {
+          "type": "String",
+          "example": "01"
+        },
+        "minutes": {
+           "type": "String",
+           "example": "11"
+          }
+      }
+    },
+      "durationMin": "{minutes}min {seconds}sec",
+      "@durationMin": {
+        "description": "a duration formatter in minutes and seconds",
+        "placeholders": {
+          "minutes": {
+            "type": "String",
+            "example": "01"
+          },
+          "seconds": {
+             "type": "String",
+             "example": "11"
+            }
+        }
+      }
 }

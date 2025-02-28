@@ -1,5 +1,8 @@
 import 'dart:convert';
 
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:contractions/generated/l10n.dart';
+
 class Contraction {
   late DateTime start;
   late DateTime? end = null;
@@ -32,17 +35,6 @@ class Contraction {
     return end?.difference(start) ?? _stopwatch.elapsed;
   }
 
-  static String getDurationFormatted(Duration duration) {
-    int totalSeconds = duration.inSeconds;
-    int minutes = totalSeconds ~/ 60;
-    int seconds = totalSeconds % 60;
-
-    String formattedMinutes = minutes.toString().padLeft(2, '0');
-    String formattedSeconds = seconds.toString().padLeft(2, '0');
-  
-    return '$formattedMinutes:$formattedSeconds';
-  }
-
   String serialize() {
     Map<String, dynamic> json = {
       'start': start.toIso8601String(),
@@ -56,6 +48,20 @@ class Contraction {
 
   @override
   String toString() {
-    return getDurationFormatted(duration);
+    return duration.toString();
+  }
+
+  static String getDurationFormatted(Duration duration, AppLocalizations appLocalizations) {
+    if(duration.inDays > 0) {
+      return appLocalizations.days(duration.inDays);
+    } else if(duration.inHours > 0) {
+      String hours = duration.inHours.remainder(24).toString();
+      String minutes = duration.inMinutes.remainder(60).toString().padLeft(2, '0');
+      return appLocalizations.durationHours(hours, minutes);
+    } else {
+      String minutes = duration.inMinutes.remainder(60).toString();
+      String seconds = duration.inSeconds.remainder(60).toString().padLeft(2, '0');
+      return appLocalizations.durationMin(minutes, seconds);
+    }
   }
 }
