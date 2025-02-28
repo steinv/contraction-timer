@@ -33,7 +33,14 @@ class Contraction {
   }
 
   static String getDurationFormatted(Duration duration) {
-    return [duration.inMinutes, duration.inSeconds].map((seg) => seg.remainder(60).toString().padLeft(2, '0')).join(':');
+    int totalSeconds = duration.inSeconds;
+    int minutes = totalSeconds ~/ 60;
+    int seconds = totalSeconds % 60;
+
+    String formattedMinutes = minutes.toString().padLeft(2, '0');
+    String formattedSeconds = seconds.toString().padLeft(2, '0');
+  
+    return '$formattedMinutes:$formattedSeconds';
   }
 
   String serialize() {
