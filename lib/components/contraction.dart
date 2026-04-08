@@ -4,7 +4,7 @@ import '../l10n/app_localizations.dart';
 
 class Contraction {
   late DateTime start;
-  late DateTime? end = null;
+  DateTime? end;
   late Stopwatch _stopwatch;
 
   Contraction(this.start) : _stopwatch = Stopwatch()..start();
